@@ -1,0 +1,20 @@
+header#main-header {
+    /* largura */
+    width: 100%;
+    /* altura  */
+    height: 60px;
+    /* cor de fundo */
+    background: #da552f;
+    /* tamanho da fonte */
+    font-size: 18px;
+    /* expessura */
+    font-weight: bold;
+    /* cor da fonte */
+    color: #FFF;
+    /* trabalhar com flex box (essa expande o conteudo ate o final da tela)  */
+    display: flex;
+    /* justificando conteiner ao centro */
+    justify-content: center;
+    /* colocando os itens no centro */
+    align-items: center;
+}

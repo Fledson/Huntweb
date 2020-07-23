@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+//importando meus estilos de pagina
+import "./styles.css"
+// importando o header para ser declarado na div
+import Header from './components/Header'
+// importando o main 
+import Main from './pages/main/index'
+// importando as rotas
+import Routes from './routes'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+//função de contrução
+const App = () => (
+  // criando minha div
+  <div className="App">
+    {/* chamando meu header */}
+    <Header />
+    {/* chamando o main */}
+    <Routes />
+  </div>
+)
+
+// exportando meu app
 export default App;
